@@ -1,10 +1,673 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+
+	<meta charset="utf-8">
+
+	<title>WR-video</title>
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="../fonts/FontAwesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.min.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
 </head>
-<body>
-	Hello World
+
+<body id="home" data-spy="scroll" data-target=".navbar">
+
+	<header>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class=" row">
+
+					<!-- Бренд и переключатели объединяются для лучшего отображения на мобильных устройствах -->
+					<div class="col-sm-3 navbar-header">
+
+						<button type="button" class="navbar-toggle navbar__button-mobile" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<i class="fa fa-bars navbar__button-mobile_icon" aria-hidden="true"></i>
+							<span class="sr-only">Toggle navigation</span>
+						</button>
+						<a href="#home">
+							<img src="img/video-logo__white.png" class="navbar__img-logo_white">
+						</a>
+
+					</div>
+
+					<!-- Навигационные ссылки, формы и другой контент для переключения -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<div class="col-sm-6">
+							<ul class="nav navbar-nav navbar__menu-items">
+								<li class="navbar__menu-item"><a class="navbar__menu-item_link" href="#home">Главная</a></li>
+								<li class="navbar__menu-item"><a class="navbar__menu-item_link" href="#about-us">О нас</a></li>
+								<li class="navbar__menu-item"><a class="navbar__menu-item_link" href="#services">Услуги</a></li>
+								<li class="navbar__menu-item"><a class="navbar__menu-item_link" href="#reviews">Отзывы</a></li>
+								<li class="navbar__menu-item"><a class="navbar__menu-item_link" href="#contacts">Контакты</a></li>
+							</ul>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="navbar__contact-block navbar-right">
+								<ul class="navbar__contact-items">
+									<li class="navbar__contact-item">
+										<a class="navbar__contact-item_link" href="#">
+											<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="navbar__contact-item">
+										<a class="navbar__contact-item_link" href="#">
+											<i class="fa fa-vk" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="navbar__contact-item">
+										<a class="navbar__contact-item_link" href="#">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="navbar__contact-item">
+										<a class="navbar__contact-item_link" href="#">
+											<i class="fa fa-youtube" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="navbar__contact-item">
+										<a class="navbar__contact-item_link" href="#">
+											<i class="fa fa-telegram" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+								<p class="navbar__contact-button_p">in touch</p>
+								<div class="navbar__contact-button">
+									<div class="navbar__contacts_circle">
+										<p class="fa fa-angle-left navbar__contacts" aria-hidden="true"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div><!-- /.navbar-collapse -->
+
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<!-- <div id="wrapper"></div> Класс для фонового видео-->
+
+		<section id="wrapper" class="header-section-1 header-section-1__bg">
+
+			<div class="header-section-1 header-section-1__overlay">
+				<div class="container-fluid header-section-1__info-block">
+					<div class="jumbotron">
+						<h1 class="header-section-1__jumbotron_h1">WR-video <small>production</small></h1>
+						<hr class="header-section-1__hr">
+						<div class="jumbotron__text">
+							<p>Современная, качественная <span class="jumbotron__text_accent">видеосъемка в</span></p>
+							<p><span class="jumbotron__text_accent">Самаре</span> и не только</p>
+							<p>по разумной цене</p>
+						</div>
+					</div>
+					<a class="header-section-1__btn-link" href="#about-us">
+						<div class="header-section-1__btn-position">
+							<p class="header-section-1__btn-text">learn more <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- <div id="wrapper"></div> Класс для фонового видео-->
+
+		</section>
+
+	</header>
+
+	<section id="about-us" class="section-2 section-2__bg">
+
+		<img class="section-2__bg-overlay" src="../img/Section-2__overlay.png">
+		<div class="section-2 section-2__overlay">
+			<div class="container">
+				<div class="section-2__info-block">
+					<h1 class="section-2__about-us-text">О нас</h1>
+					<div class="section-2__info-text">
+						<p class="section-2__info-text_p"><span class="section-2__info-text_p-accent"> Наша </span>творческая группа занимается созданием видеопродукции самой различной направленности. <span class="section-2__info-text_p-accent">Nullam</span> interdum bibendum est et tristique. Etiam hendrerit dolor sed <span class="section-2__info-text_p-accent">mauris. </span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="services" class="section-3">
+
+		<div class="section-3__service-block_bg">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<div class="row">
+							<div class="section-3__service-header">
+								<h1 class="section-3__service-header-h1">
+									<i class="fa fa-video-camera" aria-hidden="true"></i> Услуг<span class="section-3__service-header-h1_accent">и</span>
+								</h1>
+							</div>
+							<div class="col-md-9">
+								<h2 class="section-3__service-header-h2">Видеосъемка свадеб</h2>
+								<p class="lead text-justify section-3__service-p_left"><span class="section-3__service-p_accent-first">Видеосъемка</span> свадебного дня ведется под ключ, что делает услугу особенно удобной для вас.<span class="section-3__service-p_accent-second"> На выходе</span> вы получаете свадебный фильм и клип в удобном для просмотра и хранения <span class="section-3__service-p_accent-first">формате.</span></p>
+							</div>
+							<div class="col-md-3">
+								<div>
+									<img class="img-circle center-block" src="../img/Section-3__kategorii-1.jpg" />
+								</div>
+							</div>
+							<div class="col-sm-10 col-sm-offset-1 section-3__service-block">
+								<p class="lead text-justify section-3__service-block_p">Видеосъемка свадебного дня ведется под ключ, что делает услугу особенно удобной для вас. На выходе вы получаете свадебный фильм и клип   в удобном для просмотра и хранения формате.</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="section-3__video-block">
+
+					<div class="section-3__video-item section-3__video-img-1_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-1_shadow section-3__video-img_z-idx" src="../img/Section-3__video-1.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-1" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 1 -->
+						<div class="modal fade section-3__video-item-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-3__video-item section-3__video-img-2_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-2_shadow" src="../img/Section-3__video-2.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-2" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 2 -->
+						<div class="modal fade section-3__video-item-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-3__video-item section-3__video-img-3_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-3_shadow section-3__video-img_z-idx" src="../img/Section-3__video-3.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-3" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 3 -->
+						<div class="modal fade section-3__video-item-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section-3__service-block_bg section-3__service-block_bg-white">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<div class="row">
+							<div class="col-md-3">
+								<div>
+									<img class="img-circle center-block" src="../img/Section-3__kategorii-1.jpg" />
+								</div>
+							</div>
+							<div class="col-md-9">
+								<h2 class="section-3__service-header-h2 section-3__service-header-h2_right">Видеосъемка свадеб</h2>
+								<p class="lead text-justify section-3__service-p_right"><span class="section-3__service-p_accent-first">Видеосъемка</span> свадебного дня ведется под ключ, что делает услугу особенно удобной для вас.<span class="section-3__service-p_accent-second"> На выходе</span> вы получаете свадебный фильм и клип в удобном для просмотра и хранения <span class="section-3__service-p_accent-first">формате.</span></p>
+							</div>
+							<div class="col-sm-10 col-sm-offset-1 section-3__service-block">
+								<p class="lead text-justify section-3__service-block_p">Видеосъемка свадебного дня ведется под ключ, что делает услугу особенно удобной для вас. На выходе вы получаете свадебный фильм и клип   в удобном для просмотра и хранения формате.</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="section-3__video-block">
+
+					<div class="section-3__video-item section-3__video-img-1_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-1_shadow" src="../img/Section-3__video-1.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-4" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 4 -->
+						<div class="modal fade section-3__video-item-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-3__video-item section-3__video-img-2_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-2_shadow" src="../img/Section-3__video-2.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-5" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 5 -->
+						<div class="modal fade section-3__video-item-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-3__video-item section-3__video-img-3_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-3_shadow section-3__video-img_z-idx" src="../img/Section-3__video-3.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-6" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 6 -->
+						<div class="modal fade section-3__video-item-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section-3__service-block_bg">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<div class="row">
+							<div class="col-md-9">
+								<h2 class="section-3__service-header-h2">Видеосъемка свадеб</h2>
+								<p class="lead text-justify section-3__service-p_left"><span class="section-3__service-p_accent-first">Видеосъемка</span> свадебного дня ведется под ключ, что делает услугу особенно удобной для вас.<span class="section-3__service-p_accent-second"> На выходе</span> вы получаете свадебный фильм и клип в удобном для просмотра и хранения <span class="section-3__service-p_accent-first">формате.</span></p>
+							</div>
+							<div class="col-md-3">
+								<div>
+									<img class="img-circle center-block" src="../img/Section-3__kategorii-1.jpg" />
+								</div>
+							</div>
+							<div class="col-sm-10 col-sm-offset-1 section-3__service-block">
+								<p class="lead text-justify section-3__service-block_p">Видеосъемка свадебного дня ведется под ключ, что делает услугу особенно удобной для вас. На выходе вы получаете свадебный фильм и клип   в удобном для просмотра и хранения формате.</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="section-3__video-block">
+
+					<div class="section-3__video-item section-3__video-img-1_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-1_shadow" src="../img/Section-3__video-1.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-7" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 7 -->
+						<div class="modal fade section-3__video-item-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-3__video-item section-3__video-img-2_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-2_shadow" src="../img/Section-3__video-2.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-8" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 8 -->
+						<div class="modal fade section-3__video-item-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-3__video-item section-3__video-img-3_shadow_hover">
+						<img class="img center-block section-3__video-img section-3__video-img-3_shadow section-3__video-img_z-idx" src="../img/Section-3__video-3.jpg" />
+						<div data-toggle="modal" data-target=".section-3__video-item-9" class="section-3__video-item_overlay">
+							<i class="fa fa-youtube-play section-3__video-item_img-play" aria-hidden="true"></i>
+						</div>
+						<!-- Video 9 -->
+						<div class="modal fade section-3__video-item-9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+							<div class="modal-dialog modal-lg section-3__video-modal_block" role="document">
+								<div class="modal-content section-3__video-modal">
+									<iframe class="video-modal section-3__iframe" src="https://www.youtube.com/embed/aWx4YtfLJu4?list=PLPySY8CX0QK_fD6PpQ5BdUgrBb0om3cQu" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="section-4">
+		<a class="section-4_btn-link" href="">
+			<p class="section-4_btn-text">See all <i class="fa fa-youtube" aria-hidden="true"></i></p>
+		</a>
+	</section>
+
+	<section id="reviews" class="section-5">
+		<div class="section-5__service-header">
+			<h1 class="section-5__service-header-h1">
+				<span class="section-5__service-header-h1_accent">
+					<i class="fa fa-heart-o" aria-hidden="true"></i>
+				</span> Отзыв<span class="section-5__service-header-h1_accent">ы</span>
+			</h1>
+		</div>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-header carousel-inner" role="listbox">
+
+				<div class="item active section-5__bg-img"> 
+					<div class="section-5__bg-overlay"></div>
+					<div class="row carousel-caption section-5__reviews-slide">
+						<div class="col-md-6 col-md-offset-3 section-5__reviews-block">
+							<img src="../img/Section-4__otziv-1-avatar.jpg" alt="..." class="img-circle section-5__img-avatar">
+							<div class="section-5__slide-text_quotes"><i class="fa fa-quote-left section-5__slide-text_quote-left" aria-hidden="true"></i>
+								<p class="section-5__slide-text_p"><span class="section-2__info-text_p-accent">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod at velit sed vulputate. <span class="section-2__info-text_p-accent">Nullam</span> interdum bibendum est et tristique. Etiam hendrerit dolor sed <span class="section-2__info-text_p-accent">mauris. </span></p>
+								<i class="fa fa-quote-right section-5__slide-text_quote-right" aria-hidden="true"></i>
+							</div>
+							<div class="section-5__reviews-block_block-thanks">
+								<p class="section-5__reviews-block_p-thanks">Благодарственное письмо</p>
+								<a href="">
+									<i class="fa fa-file-pdf-o section-5__reviews-block_icon-thanks" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item section-5__bg-img"> 
+					<div class="section-5__bg-overlay"></div>
+					<div class="row carousel-caption section-5__reviews-slide">
+						<div class="col-md-6 col-md-offset-3 section-5__reviews-block">
+							<img src="../img/Section-4__otziv-1-avatar.jpg" alt="..." class="img-circle section-5__img-avatar">
+							<div class="section-5__slide-text_quotes"><i class="fa fa-quote-left section-5__slide-text_quote-left" aria-hidden="true"></i>
+								<p class="section-5__slide-text_p"><span class="section-2__info-text_p-accent">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod at velit sed vulputate. <span class="section-2__info-text_p-accent">Nullam</span> interdum bibendum est et tristique. Etiam hendrerit dolor sed <span class="section-2__info-text_p-accent">mauris. </span></p>
+								<i class="fa fa-quote-right section-5__slide-text_quote-right" aria-hidden="true"></i>
+							</div>
+							<div class="section-5__reviews-block_block-thanks">
+								<p class="section-5__reviews-block_p-thanks">Благодарственное письмо</p>
+								<a href="">
+									<i class="fa fa-file-pdf-o section-5__reviews-block_icon-thanks" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item section-5__bg-img"> 
+					<div class="section-5__bg-overlay"></div>
+					<div class="row carousel-caption section-5__reviews-slide">
+						<div class="col-md-6 col-md-offset-3 section-5__reviews-block">
+							<img src="../img/Section-4__otziv-1-avatar.jpg" alt="..." class="img-circle section-5__img-avatar">
+							<div class="section-5__slide-text_quotes"><i class="fa fa-quote-left section-5__slide-text_quote-left" aria-hidden="true"></i>
+								<p class="section-5__slide-text_p"><span class="section-2__info-text_p-accent">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod at velit sed vulputate. <span class="section-2__info-text_p-accent">Nullam</span> interdum bibendum est et tristique. Etiam hendrerit dolor sed <span class="section-2__info-text_p-accent">mauris. </span></p>
+								<i class="fa fa-quote-right section-5__slide-text_quote-right" aria-hidden="true"></i>
+							</div>
+							<div class="section-5__reviews-block_block-thanks">
+								<p class="section-5__reviews-block_p-thanks">Благодарственное письмо</p>
+								<a href="">
+									<i class="fa fa-file-pdf-o section-5__reviews-block_icon-thanks" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<i class="fa fa-angle-left section-5__slider-controls" aria-hidden="true"></i>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<i class="fa fa-angle-right section-5__slider-controls" aria-hidden="true"></i>
+			</a>
+		</div>
+	</section>
+
+	<section id="contacts" class="section-6">
+		
+		<div class="container-fluid section-6__contacts-block">
+			<div class="row">
+
+				<div class="section-6__service-header">
+					<h1 class="section-6__service-header-h1">
+						<span class="section-6__service-header-h1_accent">Контакты</span>
+					</h1>
+				</div>
+
+				<div class="col-md-6 section-6__contacts-block_left">
+					<div class="row section-6__contacts-block_overlay-left">
+						<ul class="col-md-6 col-md-offset-3 list-unstyled section-6__contacts-block_items">
+							<a class="section-6__contacts-block_link" href="">
+								<li class="section-6__contacts-block_item"><i class="fa fa-envelope-o" aria-hidden="true"></i> Мой E-mail</li>
+							</a>
+							<a class="section-6__contacts-block_link" href="">
+								<li class="section-6__contacts-block_item"><i class="fa fa-vk" aria-hidden="true"></i> Группа в VK</li>
+							</a>
+							<a class="section-6__contacts-block_link" href="">
+								<li class="section-6__contacts-block_item"><i class="fa fa-instagram" aria-hidden="true"></i> Я в Inst</li>
+							</a>
+							<a class="section-6__contacts-block_link" href="">
+								<li class="section-6__contacts-block_item"><i class="fa fa-youtube" aria-hidden="true"></i> Все видео</li>
+							</a>
+							<a class="section-6__contacts-block_link" href="">
+								<li class="section-6__contacts-block_item"><i class="fa fa-telegram" aria-hidden="true"></i> Написать</li>
+							</a>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 section-6__contacts-block_right">
+					<form class="row section-6__contacts-block_overlay-right">
+						<div class="col-md-6 col-md-offset-3">
+							<p class="section-6__contacts-block_p">Оставить заявку</p>
+							<div class="form-group section-6__contacts-block_text">
+								<input type="text" class="form-control section-6__contacts-block_input-text" placeholder="Как к Вам обращаться">
+							</div>
+							<div class="form-group section-6__contacts-block_email">
+								<input type="email" class="form-control section-6__contacts-block_input-email" placeholder="Ваш e-mail">
+							</div>
+							<button type="submit" class="section-6__contacts-block_btn">
+								<i class="fa fa-paper-plane" aria-hidden="true">*</i>
+							</button>
+							<p class="section-6__contacts-block_p-pers-info" data-toggle="modal" data-target=".bs-example-modal-lg">* Нажимая кнопку <i class="fa fa-paper-plane" aria-hidden="true"></i> ( Отправить ), Вы подтверждаете свое согласие на обработку персональных данных</p>
+
+							<!--Модальное окно с соглашением-->
+							<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content section-6__contacts-block_modal">
+										<p class="section-6__contacts-block_modal_h1">Согласие на обработку
+										персональных данных</p>
+										<p class="section-6__contacts-block_modal_h3">Пользователь, заполняя форму обратной связи на интернет-сайте https://.../,
+											принимает   настоящее   Согласие   на   обработку   персональных   данных   (далее   –
+											Согласие).   Действуя   свободно,   своей   волей   и   в   своем   интересе,   а   также
+											подтверждая свою дееспособность, Пользователь дает свое согласие Физческому Лицу (далее - физ. лицо) "ФИО" «WR-video» (далее - Исполнитель)  на   обработку   своих
+										персональных       данных       со       следующими       условиями:</p>
+										<p class="section-6__contacts-block_modal_p">1.   Данное   Согласие   дается   на   обработку   персональных   данных,   как   без
+										использования   средств   автоматизации,   так   и   с   их   использованием.</p>  
+										<p class="section-6__contacts-block_modal_p">2.   Согласие   дается   на   обработку   следующих   моих   персональных   данных,   не
+											являющихся специальными или биометрическими: фамилия и имя, телефон, e-
+											mail, пользовательские данные (сведения о местоположении; тип и версия ОС; тип
+											и версия Браузера; тип устройства и разрешение его экрана; источник, откуда
+											пользователь пришел на сайт; язык ОС и Браузера; какие страницы открывает и на
+										какие       кнопки       нажимает       пользователь;       ip-адрес).</p>
+										<p class="section-6__contacts-block_modal_p">3.     Персональные     данные     не     являются     общедоступными.</p>    
+										<p class="section-6__contacts-block_modal_p">4.   Цель   обработки   персональных   данных:   обработка   входящих   запросов   на
+											создание   сайтов   и   ведение   корпоративных   блогов;   рассмотрение   портфолио
+											кандидатов на вакантные позиции; аналитика действий физического лица на веб-
+										сайте и функционирование веб-сайта; проведение рассылки обновлений в блоге.</p>
+										<p class="section-6__contacts-block_modal_p">5. Основанием для обработки персональных данных является: ст. 24 Конституции
+											Российской   Федерации;   ст.6   Федерального   закона   No152-ФЗ   «О   персональных
+										данных»;   настоящее   согласие   на   обработку   персональных   данных.</p>  
+										<p class="section-6__contacts-block_modal_p">6. В ходе обработки с персональными данными  будут совершены  следующие
+											действия:   сбор;   запись;   систематизация;   накопление;   хранение;   уточнение
+											(обновление, изменение); извлечение; использование; передача (распространение,
+										предоставление,     доступ);     блокирование;     удаление;     уничтожение. </p>   
+										<p class="section-6__contacts-block_modal_p">7.   Персональные   данные   обрабатываются   до   отписки   физического   лица   от
+											рассылки. Также обработка персональных данных  может быть прекращена по
+											запросу   субъекта   персональных   данных.   Хранение   персональных   данных,
+											зафиксированных   на   бумажных   носителях,   осуществляется   согласно
+											Федеральному закону No125-ФЗ «Об архивном деле в Российской Федерации» и
+											иным   нормативно-правовым   актам   в   области   архивного   дела   и   архивного
+										хранения.</p>
+										<p class="section-6__contacts-block_modal_p">8.   Согласие   может   быть   отозвано   субъектом   персональных   данных   или   его
+											представителем путем направления заявления об отзыве согласия на обработку
+										персональных   данных   на   электронную   почту:   "..." </p>   
+										<p class="section-6__contacts-block_modal_p">9.   В   случае   отзыва   субъектом   персональных   данных   или   его   представителем
+											согласия   на   обработку   персональных   данных   Исполнитель   вправе
+											продолжить обработку персональных данных без согласия субъекта персональных
+											данных при наличии оснований, указанных в пунктах 2 – 11 части 1 статьи 6,
+											части   2   статьи   10   и   части   2   статьи   11   Федерального   закона   No152-ФЗ   «О
+										персональных         данных»         от         27.07.2006         г.</p>
+										<p class="section-6__contacts-block_modal_p">10. Настоящее согласие действует все время до момента прекращения обработки
+										персональных данных, указанных в п.7 и п.8 данного Согласия. </p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="footer-section-7 footer-section-7__bg">
+
+		<div class="container-fluid footer-section-7__overlay">
+			<div class="row">
+
+				<div class="col-md-8 ">
+					<div class="row">
+
+						<div class="col-md-4 col-md-offset-2 footer-section-7__about-site-block">
+							<h1 class="footer-section-7__about-site_h1">О сайте</h1>
+							<p class="footer-section-7__about-site_p"><span class="footer-section-7__about-site_accent">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod at velit sed vulputate. <span class="footer-section-7__about-site_accent">Nullam</span> interdum bibendum est et tristique. Etiam hendrerit dolor sed <span class="footer-section-7__about-site_accent">mauris. </span></p>
+						</div>
+
+						<div class="col-md-4 col-md-offset-2 footer-section-7__menu-site-block">
+							<h1 class="footer-section-7__menu-site_h1">Меню сайта</h1>
+							<ul class="footer-section-7__menu-site_items">
+								<a class="footer-section-7__menu-site_item_link" href="#home"><li class="footer-section-7__menu-site_item">Главная</li></a>
+								<a class="footer-section-7__menu-site_item_link" href="#about-us"><li class="footer-section-7__menu-site_item">О нас</li></a>
+								<a class="footer-section-7__menu-site_item_link" href="#services"><li class="footer-section-7__menu-site_item">Услуги</li></a>
+								<a class="footer-section-7__menu-site_item_link" href="#reviews"><li class="footer-section-7__menu-site_item">Отзывы</li></a>
+								<a class="footer-section-7__menu-site_item_link" href="#contacts"><li class="footer-section-7__menu-site_item">Контакты</li></a>
+							</ul>
+						</div>
+
+						<div class="col-md-12">
+							<p class="footer-section-7__copyright_p">
+								<i class="fa fa-copyright" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu risus lectus. Morbi at quam pharetra, lobortis urna sit amet. 
+							</p>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-md-4 footer-section-7__contacts-block">
+					<a class="footer-section-7__contacts-block_a" href="#home">
+						<img class="footer-section-7__contacts-block_logo" src="../img/video_logo.png">
+					</a>
+					<div class="footer-section-7__contacts-block_items">
+						<a class="footer-section-7__contacts-block_link" href="">
+							<i class="fa fa-envelope-o footer-section-7__contacts-block_item" aria-hidden="true"></i>
+						</a>
+						<a class="footer-section-7__contacts-block_link" href="">
+							<i class="fa fa-vk footer-section-7__contacts-block_item" aria-hidden="true"></i>
+						</a>
+						<a class="footer-section-7__contacts-block_link" href="">
+							<i class="fa fa-instagram footer-section-7__contacts-block_item" aria-hidden="true"></i>
+						</a>
+						<a class="footer-section-7__contacts-block_link" href="">
+							<i class="fa fa-youtube footer-section-7__contacts-block_item" aria-hidden="true"></i>
+						</a>
+						<a class="footer-section-7__contacts-block_link" href="">
+							<i class="fa fa-telegram footer-section-7__contacts-block_item" aria-hidden="true"></i>
+						</a>
+					</div>
+					<a href="">
+						<img class="footer-section-7__contacts-block_my-logo" src="../img/Lis-logo.svg">
+					</a>
+					<p class="footer-section-7__contacts-block_p">Создание сайтов на заказ</p>
+				</div>
+
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- http://placehold.it/150x60 Пример src пустой картинки-заглушки -->
+
+  <!-- <script type="text/javascript" src="../libs/jquery/dist/jquery.min.js"></script> -->
+	<!-- <script type="text/javascript" src="../js/bootstrap.js"></script> -->
+	<script type="text/javascript" src="../js/scripts.min.js"></script>
+	<!-- <script type="text/javascript" src="../js/common.js"></script> -->
+
 </body>
 </html>
